@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Ceron | Sitio Oficial</title>
+
+<title>Ceron | Sitio Oficial</title>
+
 <link rel="icon" type="image/jpg" href="logo.jpg">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -24,6 +27,8 @@ body{
 background:#0f172a;
 color:white;
 }
+
+/* HEADER */
 
 header{
 height:100vh;
@@ -61,6 +66,8 @@ transition:.3s;
 transform:scale(1.05);
 }
 
+/* SECCIONES */
+
 section{
 padding:80px 10%;
 }
@@ -70,6 +77,8 @@ font-size:35px;
 margin-bottom:30px;
 color:#60a5fa;
 }
+
+/* CARDS */
 
 .cards{
 display:grid;
@@ -93,6 +102,134 @@ background:#334155;
 margin-bottom:15px;
 color:#3b82f6;
 }
+
+/* FOTO */
+
+img{
+width:170px;
+height:170px;
+border-radius:50%;
+margin-bottom:25px;
+border:5px solid white;
+object-fit:cover;
+}
+
+/* =========================
+   SERVIDOR SA:MP
+========================= */
+
+.server-card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+max-width:900px;
+margin:auto;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.server-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.server-header h3{
+font-size:25px;
+color:#60a5fa;
+}
+
+.server-header p{
+color:#94a3b8;
+margin-top:5px;
+}
+
+.status{
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+font-weight:bold;
+}
+
+.status.online{
+background:#14532d;
+color:#4ade80;
+}
+
+.status.offline{
+background:#450a0a;
+color:#f87171;
+}
+
+.server-info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.server-box{
+background:#0f172a;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.server-box span{
+display:block;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.server-box strong{
+display:block;
+font-size:25px;
+color:#60a5fa;
+}
+
+.server-box p{
+color:#94a3b8;
+margin-top:5px;
+}
+
+.players-section{
+margin-top:30px;
+}
+
+.players-section h3{
+margin-bottom:15px;
+color:#60a5fa;
+}
+
+#players-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.player{
+background:#0f172a;
+padding:12px 15px;
+border-radius:10px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.player-id{
+color:#60a5fa;
+font-weight:bold;
+}
+
+.no-players{
+color:#94a3b8;
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+}
+
+/* REDES */
 
 footer{
 text-align:center;
@@ -122,18 +259,14 @@ transition:.3s;
 background:#1d4ed8;
 }
 
-img{
-width:170px;
-height:170px;
-border-radius:50%;
-margin-bottom:25px;
-border:5px solid white;
-object-fit:cover;
-}
 </style>
 </head>
 
 <body>
+
+<!-- =========================
+     INICIO
+========================= -->
 
 <header>
 
@@ -141,57 +274,176 @@ object-fit:cover;
 
 <img src="foto.jpg" alt="Ceron">
 
-<h1> Ceron</h1>
+<h1>Ceron</h1>
 
-<p>Creador de contenido • Gamer • Desarrollador Web • Comunidad SA:MP</p>
+<p>
+Creador de contenido • Gamer • Desarrollador Web • Comunidad SA:MP
+</p>
 
-<a href="#sobre" class="btn">Conóceme</a>
+<a href="#sobre" class="btn">
+Conóceme
+</a>
 
 </div>
 
 </header>
 
+
+<!-- =========================
+     SOBRE MÍ
+========================= -->
+
 <section id="sobre">
 
-<h2 class="titulo">Sobre mí</h2>
+<h2 class="titulo">
+Sobre mí
+</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>¿Quién soy?</h3>
+
 <p>
 Soy Ceron. Me apasiona la tecnología, los videojuegos y crear proyectos para internet.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Gaming</h3>
+
 <p>
 Realizo directos y disfruto jugar SA:MP y otros videojuegos con mi comunidad.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Desarrollo</h3>
+
 <p>
 Me gusta crear páginas web, servidores, bots de Discord y aprender nuevas tecnologías.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>Objetivos</h3>
+
 <p>
 Seguir creciendo como creador de contenido y desarrollar proyectos cada vez más grandes.
 </p>
+
 </div>
 
 </div>
 
 </section>
 
+
+<!-- =========================
+     SERVIDOR SA:MP
+========================= -->
+
+<section id="servidor">
+
+<h2 class="titulo">
+Servidor SA:MP
+</h2>
+
+<div class="server-card">
+
+<div class="server-header">
+
+<div>
+
+<h3>🔥 Ceron Roleplay</h3>
+
+<p>
+188.93.139.104:3018
+</p>
+
+</div>
+
+<span id="server-status" class="status offline">
+● DESCONECTADO
+</span>
+
+</div>
+
+
+<div class="server-info">
+
+<div class="server-box">
+
+<span>👥</span>
+
+<strong id="players">
+0
+</strong>
+
+<p>
+Jugadores conectados
+</p>
+
+</div>
+
+
+<div class="server-box">
+
+<span>🌐</span>
+
+<strong style="font-size:18px;">
+188.93.139.104:3018
+</strong>
+
+<p>
+IP del servidor
+</p>
+
+</div>
+
+</div>
+
+
+<div class="players-section">
+
+<h3>
+👤 Jugadores conectados
+</h3>
+
+<div id="players-list">
+
+<p class="no-players">
+Cargando jugadores...
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     HABILIDADES
+========================= -->
+
 <section>
 
-<h2 class="titulo">Habilidades</h2>
+<h2 class="titulo">
+Habilidades
+</h2>
 
 <div class="cards">
 
@@ -223,9 +475,16 @@ Streaming ⭐⭐⭐⭐☆
 
 </section>
 
+
+<!-- =========================
+     REDES
+========================= -->
+
 <section>
 
-<h2 class="titulo">Mis Redes</h2>
+<h2 class="titulo">
+Mis Redes
+</h2>
 
 <div class="redes">
 
@@ -251,15 +510,134 @@ Instagram
 
 </div>
 
-</div>
-
 </section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-<p>© 2026 Ceron - Todos los derechos reservados.</p>
+<p>
+©️ 2026 Ceron - Todos los derechos reservados.
+</p>
 
 </footer>
+
+
+<!-- =========================
+     CONSULTA SERVIDOR
+========================= -->
+
+<script>
+
+async function actualizarServidor(){
+
+try{
+
+const response = await fetch("https://TU-API.com/api/samp");
+
+if(!response.ok){
+
+throw new Error("API no disponible");
+
+}
+
+const data = await response.json();
+
+const status =
+document.getElementById("server-status");
+
+const players =
+document.getElementById("players");
+
+const playersList =
+document.getElementById("players-list");
+
+
+if(data.online){
+
+status.textContent = "● ONLINE";
+
+status.className = "status online";
+
+players.textContent = data.players;
+
+
+if(data.players > 0){
+
+playersList.innerHTML = "";
+
+data.names.forEach(player => {
+
+const div =
+document.createElement("div");
+
+div.className = "player";
+
+div.innerHTML = `
+<span>👤</span>
+<span>
+<span class="player-id">#${player.id}</span>
+${player.name}
+</span>
+`;
+
+playersList.appendChild(div);
+
+});
+
+}else{
+
+playersList.innerHTML =
+'<p class="no-players">No hay jugadores conectados.</p>';
+
+}
+
+}else{
+
+status.textContent = "● DESCONECTADO";
+
+status.className = "status offline";
+
+players.textContent = "0";
+
+playersList.innerHTML =
+'<p class="no-players">El servidor está desconectado.</p>';
+
+}
+
+}catch(error){
+
+console.error(error);
+
+const status =
+document.getElementById("server-status");
+
+status.textContent =
+"● SIN RESPUESTA";
+
+status.className =
+"status offline";
+
+document.getElementById("players").textContent = "0";
+
+document.getElementById("players-list").innerHTML =
+'<p class="no-players">No se pudo consultar el servidor.</p>';
+
+}
+
+}
+
+
+// Actualizar al cargar
+actualizarServidor();
+
+// Actualizar cada 15 segundos
+setInterval(actualizarServidor,15000);
+
+</script>
 
 </body>
 </html>
